@@ -32,6 +32,8 @@ namespace myApp
 
             MyClass c1 = new MyClass();
             Console.WriteLine($"Call MyClass ReturnMessage function from Program: {c1.ReturnMessage()}");
+
+            MyClass.MinMax();
         }
     }
 }
