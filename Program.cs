@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace myApp
 {
@@ -34,8 +34,12 @@ namespace myApp
             double h = (e  + f) / g;
             Console.WriteLine(h);
 
-            double third = 1.0 / 3.0;
-            Console.WriteLine(third);
+            double i = 1.0 / 3.0;
+            Console.WriteLine(i);
+
+            // The M suffix on the numbers is how you indicate that a constant should use the decimal type        
+            decimal j = 1.0M / 3.0M;
+            Console.WriteLine(j);
         }
 
         static void MyFirstFunction()
@@ -46,14 +50,16 @@ namespace myApp
         static void Main(string[] args)
         {
             MyFirstFunction();
-            PlayWithIntegers();
+            //PlayWithIntegers();
 
-            MyClass c1 = new MyClass();
-            Console.WriteLine($"Call MyClass ReturnMessage function from Program: {c1.ReturnMessage()}");
+            //MyClass c1 = new MyClass();
+            //Console.WriteLine($"Call MyClass ReturnMessage function from Program: {c1.ReturnMessage()}");
 
-            MyClass.MinMax();
+            //MyClass.MinMax();
 
-            PlayWithDouble();
+            //PlayWithDouble();
+
+            MyClass.LogicalOps();
         }
     }
 }
