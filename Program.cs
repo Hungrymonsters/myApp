@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace myApp
 {
@@ -50,14 +50,16 @@ namespace myApp
         static void Main(string[] args)
         {
             MyFirstFunction();
-            PlayWithIntegers();
+            //PlayWithIntegers();
 
-            MyClass c1 = new MyClass();
-            Console.WriteLine($"Call MyClass ReturnMessage function from Program: {c1.ReturnMessage()}");
+            //MyClass c1 = new MyClass();
+            //Console.WriteLine($"Call MyClass ReturnMessage function from Program: {c1.ReturnMessage()}");
 
-            MyClass.MinMax();
+            //MyClass.MinMax();
 
-            PlayWithDouble();
+            //PlayWithDouble();
+
+            MyClass.LogicalOps();
         }
     }
 }
