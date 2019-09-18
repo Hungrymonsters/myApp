@@ -43,5 +43,13 @@ namespace myApp
                 "And the first number " + a + " is not equal to the second " + b);
 
         }
+
+        public static void MakeLoop()
+        {
+            for (int index = 0; index < 10; index++)
+        {
+            Console.WriteLine($"Hello World! The index is {index}");
+        }
+        }
     }
 }
