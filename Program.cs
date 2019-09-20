@@ -56,10 +56,10 @@ namespace myApp
             //Console.WriteLine($"Call MyClass ReturnMessage function from Program: {c1.ReturnMessage()}");
 
             //MyClass.MinMax();
-
             //PlayWithDouble();
-
-            MyClass.LogicalOps();
+            //MyClass.LogicalOps();
+            //MyClass.MakeLoop();
+            MyClass.Div3();
         }
     }
 }
