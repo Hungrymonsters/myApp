@@ -57,8 +57,9 @@ namespace myApp
 
             //MyClass.MinMax();
             //PlayWithDouble();
-            MyClass.LogicalOps();
-            MyClass.MakeLoop();
+            //MyClass.LogicalOps();
+            //MyClass.MakeLoop();
+            MyClass.Div3();
         }
     }
 }
