@@ -47,9 +47,20 @@ namespace myApp
         public static void MakeLoop()
         {
             for (int index = 0; index < 10; index++)
-        {
-            Console.WriteLine($"Hello World! The index is {index}");
+            {
+                Console.WriteLine($"Hello World! The index is {index}");
+            }
         }
+
+        public static void Div3()
+        {
+            int ans = 0;
+            for (int i = 1; i <= 20; i ++)
+            {
+
+                if (i % 3 == 0) ans += i;
+            }
+            Console.WriteLine($"Answer is {ans}");
         }
     }
 }
