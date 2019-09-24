@@ -45,14 +45,20 @@ namespace myApp
         }
 
         public static void MakeLoop()
+        // While Loop
         {
-            for (int index = 0; index < 10; index++)
+            double j = 10;
+            //double ans = 0;
+            while (j > 0)
             {
-                Console.WriteLine($"Hello World! The index is {index}");
+                //ans = Math.Pow(j,j);
+                Console.WriteLine($"{Math.Pow(j,j)}");
+                j--;
             }
         }
 
         public static void Div3()
+        // For Loop
         {
             int ans = 0;
             for (int i = 1; i <= 20; i ++)
