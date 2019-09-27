@@ -60,8 +60,8 @@ namespace myApp
             //MyClass.LogicalOps();
             //MyClass.MakeLoop();
             //MyClass.Div3();
-            MyClass.tryForeach();
-            MyClass.tryForeach2D();
+            //MyClass.tryForeach();
+            //MyClass.tryForeach2D();
         }
     }
 }
