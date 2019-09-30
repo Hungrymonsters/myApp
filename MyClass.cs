@@ -68,5 +68,29 @@ namespace myApp
             }
             Console.WriteLine($"Answer is {ans}");
         }
+
+        public static void tryForeach()
+        {
+            int[] numbers = { 4, 5, 6, 1, 2, 3, -2, -1, 0 };
+            foreach (int i in numbers)
+            {
+                System.Console.Write("{0} ", i);
+            }
+            System.Console.Write("\r\n");
+            // Output: 4 5 6 1 2 3 -2 -1 0
+        }
+
+        public static void tryForeach2D()
+        {
+            int[,] number2D = new int[3,2] { {9, 99}, {3, 33} , {5 , 55} };
+            // Or use the short form:
+            // int[,] numbers2D = { { 9, 99 }, { 3, 33 }, { 5, 55 } };
+            foreach (int i in number2D)
+            {
+                System.Console.Write("{0} ", i);
+            }
+            System.Console.Write("\r\n");
+        }
+        
     }
 }
