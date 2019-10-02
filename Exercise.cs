@@ -6,7 +6,14 @@ namespace myApp
     {
         static void Main(string[] args)
         {
-            tryBreak();
+            // tryBreak();
+            
+            // Take optional arguments 
+            for (int i = 0 ; i < args.Length ; i ++)
+            {
+                Console.WriteLine("Argument given: "+ $"{args[i]}");
+                if ( args[i] == "-t") tryBreak();
+            }
         }
 
         static void tryBreak()
