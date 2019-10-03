@@ -13,7 +13,7 @@ namespace myApp
                 if ( args[i] == "-t") tryBreak();
                 if ( args[i] == "-i") innerLoop();
                 if ( args[i] == "-m") Switch();
-                if ( args[i] == "-c")TestCon();
+                if ( args[i] == "-c") TestCon();
             }
         }
 
