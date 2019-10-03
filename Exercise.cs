@@ -13,6 +13,7 @@ namespace myApp
                 if ( args[i] == "-t") tryBreak();
                 if ( args[i] == "-i") innerLoop();
                 if ( args[i] == "-m") Switch();
+                if ( args[i] == "-c")TestCon();
             }
         }
 
@@ -70,6 +71,20 @@ namespace myApp
                 default:
                     Console.WriteLine("Sorry, invalid selection.");
                     break;
+            }
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
+
+        public static void TestCon()
+        {
+            for (int i = 1 ; i <= 6 ; i ++)
+            {
+                if (i < 5)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
             }
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
