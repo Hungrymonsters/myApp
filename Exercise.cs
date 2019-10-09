@@ -7,13 +7,15 @@ namespace myApp
         static void Main(string[] args)
         {
             // Take optional arguments 
-            for (int i = 0 ; i < args.Length ; i ++)
+            for (int j = 0 ; j < args.Length ; j ++)
             {
-                Console.WriteLine($"Argument given: {args[i]}");
-                if ( args[i] == "-t") tryBreak();
-                if ( args[i] == "-i") innerLoop();
-                if ( args[i] == "-m") Switch();
-                if ( args[i] == "-c") TestCon();
+                Console.WriteLine($"Argument given: {args[j]}");
+                if ( args[j] == "-t") tryBreak();
+                else if ( args[j] == "-i") innerLoop();
+                else if ( args[j] == "-m") Switch();
+                else if ( args[j] == "-c") TestCon();
+                else if ( args[j] == "-s") shortIf();
+                else break;
             }
         }
 
@@ -24,7 +26,8 @@ namespace myApp
                 if (i == 5) break;
                 Console.WriteLine(i);
             }
-            Console.WriteLine("Press any key to continue...");
+            
+            Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
 
@@ -88,6 +91,26 @@ namespace myApp
             }
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
+        }
+
+        public static void shortIf()
+        {
+            int input = new Random().Next(-5, 5);
+
+            string classify1;
+            string classify2;
+            if (input >= 0)
+            {
+                classify1 = "nonnegative";
+            }
+            else
+            {
+                classify1 = "negative";
+            }
+
+            classify2 = (input >= 0) ? "nonnegative" : "negative";
+
+            Console.WriteLine($"Input {input} is {classify1} and {classify2}");
         }
     }
 }
