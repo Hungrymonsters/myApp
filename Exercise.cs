@@ -64,19 +64,25 @@ namespace myApp
             {
                 case 1:
                     Console.WriteLine("Current value is {0}", 1);
-                    break;
+                    goto Finish;
                 case 2:
                     Console.WriteLine("Current value is {0}", 2);
                     break;
                 case 3:
                     Console.WriteLine("Current value is {0}", 3);
-                    break;
+                    goto Extra;
                 default:
                     Console.WriteLine("Sorry, invalid selection.");
-                    break;
+                    return;
             }
-            Console.WriteLine("Press any key to exit.");
+            Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
+
+        Extra:
+                Console.WriteLine("Helloooo");
+        Finish:
+            Console.WriteLine("End");
+
         }
 
         public static void TestCon()
@@ -112,5 +118,6 @@ namespace myApp
 
             Console.WriteLine($"Input {input} is {classify1} and {classify2}");
         }
+
     }
 }
