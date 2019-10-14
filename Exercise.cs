@@ -6,9 +6,6 @@ namespace myApp
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-            tryBreak();
-=======
             // Take optional arguments 
             for (int j = 0 ; j < args.Length ; j ++)
             {
@@ -20,7 +17,6 @@ namespace myApp
                 else if ( args[j] == "-s") shortIf();
                 else break;
             }
->>>>>>> 2d4aef371caabb39d00c9789ddfa5a6afdfbc363
         }
 
         static void tryBreak()
@@ -30,8 +26,6 @@ namespace myApp
                 if (i == 5) break;
                 Console.WriteLine(i);
             }
-<<<<<<< HEAD
-=======
             
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
@@ -95,13 +89,10 @@ namespace myApp
                 }
                 Console.WriteLine(i);
             }
->>>>>>> 2d4aef371caabb39d00c9789ddfa5a6afdfbc363
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
 
-<<<<<<< HEAD
-=======
         public static void shortIf()
         {
             int input = new Random().Next(-5, 5);
@@ -121,6 +112,5 @@ namespace myApp
 
             Console.WriteLine($"Input {input} is {classify1} and {classify2}");
         }
->>>>>>> 2d4aef371caabb39d00c9789ddfa5a6afdfbc363
     }
 }
