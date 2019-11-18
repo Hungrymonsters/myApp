@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace myApp
 {
@@ -9,8 +10,6 @@ namespace myApp
             int radius = 5;
             double result = CalculateArea(radius);
             Console.WriteLine("The area is {0:0.00}", result);
-
-
         }
 
         static double CalculateArea(int r)
@@ -37,6 +36,9 @@ namespace myApp
     {
         public static void Main()
         {
+            fib();
+            Console.WriteLine("");
+
             var gen = new NumberGenerator();
             int index = 10;
             try {
@@ -48,5 +50,23 @@ namespace myApp
                 Console.WriteLine($"{e.GetType().Name}: {index} is outside the bounds of the array");
             }
         }
+
+        public static void fib()
+        {
+            var fibonacciNumbers = new List<int> {1, 1};
+
+            while (fibonacciNumbers.Count < 20)
+            {
+                var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+                var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+                fibonacciNumbers.Add(previous + previous2);
+            }
+
+                foreach (var item in fibonacciNumbers)
+                    Console.WriteLine(item); 
+           
+        }
     }
+
 }
